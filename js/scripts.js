@@ -1,4 +1,4 @@
-/*!
+/*!             CONFIGURATION
     * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
@@ -40,3 +40,40 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+
+/*------------Others Scripts----------------------------*/
+
+var id = null;
+function InSlide() {
+  var elem = document.getElementById("animate");   
+  elem.style.visibility = "visible"
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      //elem.style.top = pos + "px"; 
+      elem.style.right = pos + "px"; 
+    }
+  }
+}
+
+function fLinkedIn (url){
+    window.open(url, "LinkedIn", "width=600, height=400")
+}
+
+function OutSlide(){
+
+
+
+
+    var elem = document.getElementById("animate");   
+    elem.style.visibility = "hidden"
+
+  
+
+}

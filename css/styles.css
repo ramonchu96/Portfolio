@@ -78,23 +78,8 @@ body {
 
 }
 
-.image-body{
-  background-size: contain;
-  width: fit-content;
-  position: relative;
-  background-image: url(../assets/img/imagebody.jpg);  
-  background-repeat: repeat-y;
-  animation: movimiento 40s infinite linear alternate;
 
-}
 
-@keyframes movimiento{
-  from{
-      background-position: bottom ;
-  }to{
-      background-position: top;
-  }
-}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -4342,8 +4327,8 @@ input[type=button].btn-block {
 }
 
 .card {
-  position: relative;
-  display: flex;
+  position: absolute;
+  display: none;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -4351,6 +4336,8 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+   
+ 
 }
 .card > hr {
   margin-right: 0;
@@ -4379,6 +4366,8 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  background-color: #ff9900;
+ 
 }
 
 .card-title {
@@ -10138,6 +10127,34 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/*-----My CSS------*/
+
+.image-body{
+  background-size: contain;
+  width: fit-content;
+  position: relative;
+  background-image: url(../assets/img/imagebody.jpg);  
+  background-repeat: repeat-y;
+  animation: movimiento 40s infinite linear ;
+
+}
+
+@keyframes movimiento{
+  from{
+      background-position: bottom ;
+  }to{
+      background-position: top ;
+  }
+}
+
+/*Animate Slider*/
+#animate {
+  visibility: hidden;
+  position: absolute;
+
+
 }
 
 /*--------Animation body-image---------
