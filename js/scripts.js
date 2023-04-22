@@ -127,9 +127,8 @@ $(document).ready(function(){
 
 //ButtonNight
 function changeMode(){
-  var element = document.body;
+  var element = document.body;  
   element.classList.toggle("darkmode");
-  element.classList.toggle("image-body");
 }
 
 
