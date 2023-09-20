@@ -16,7 +16,6 @@ function changeMode(){
   element.classList.toggle("darkmode");
 
 
-
 }
 
 
