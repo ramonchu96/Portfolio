@@ -104,5 +104,5 @@ if (window.location.hash) {
 }
 
 function downloadCV(){
-  window.location.href = "https://drive.google.com/file/d/1MNYWqJVx4sxTAFDj8u-AGNFDkxQ0udhf/view?usp=sharing"
+  window.location.href = "https://drive.google.com/file/d/1PrMuE6pBMFXi5fqrWTMKnwQZiSe9H1ps/view?usp=sharing"
 }
